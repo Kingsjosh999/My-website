@@ -1,0 +1,199 @@
+/* Import a clean professional font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #333;
+}
+
+
+.btn-resume:hover {
+  background-color: #019475;
+}
+
+.profile-img {
+  background-color: white;  /* White background around the image */
+  width: 150px;             /* Increase size */
+  height: 150px;            /* Match width to keep it circular */
+  border-radius: 50%;       /* Make it round */
+  display: flex;
+  align-items: center;      /* Center the image */
+  justify-content: center;  /* Center the image */
+  padding: 5px;             /* Optional: adds a bit of padding for a cleaner look */
+}
+
+.profile-img img {
+  width: 100%;              /* Ensure the image covers the container */
+  height: 100%;             /* Maintain the aspect ratio */
+  border-radius: 50%;       /* Keep the round shape */
+  object-fit: cover;        /* Crop image if necessary to cover the circle */
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.intro-text .tagline {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.navbar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00b894;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.section {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #00b894;
+}
+
+.section p,
+.section li {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #00b894;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-portfolio {
+  display: inline-block;
+  background-color: #00b894;
+  color: #121212;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-portfolio:hover {
+  background-color: #019475;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #00b894;
+  color: #121212;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+#scrollToTopBtn:hover {
+  background-color: #019475;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .profile-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+}
