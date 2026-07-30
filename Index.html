@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Kingsley · Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#home" class="logo">Joshua<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#offer">What I Offer</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#offer">What I Offer</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="wave">👋</span> Hello, I'm
+                </div>
+                <h1 class="hero-name">
+                    Joshua <span class="highlight">Kingsley</span>
+                </h1>
+                <div class="hero-typing">
+                    <span id="typed-text"></span>
+                </div>
+                <p class="hero-description">
+                    Computer Science Student &amp; Front-End Web Developer
+                    passionate about crafting beautiful, responsive, and
+                    performant digital experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="RESUME (3).pdf" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="image-placeholder">
+                        <!-- Replace src with your profile image -->
+                        <img src="profile.jpg" alt="Joshua Kingsley" />
+                        <!-- Fallback icon if image is missing -->
+                        <i class="fas fa-user" style="display:none;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT
+    ============================================================ -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                
+
+                <div class="about-text" data-aos="fade-left" data-aos-duration="800">
+                    <span class="section-label">About Me</span>
+                    <h3>Building the future, one line of code at a time.</h3>
+                    <p>
+                        Hi, I'm Joshua, a Computer Science student and Front-End Developer from Nigeria. I build responsive, user-friendly web apps that solve real problems.
+                    </p>
+                    <p>
+                        I work with HTML, CSS, and JavaScript, and I’ve created projects that solved real-time problems like a real‑time chat app and a departmental grouping system designed to simplify student organization and management. I'm passionate about learning, collaboration, and turning ideas into digital products.
+                    </p>
+                    <p>I'm Currently expanding toward full‑stack development, I'm always open to new opportunities and challenges.
+                    </p>
+                    <div class="about-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SKILLS
+    ============================================================ -->
+    <section id="skills">
+        <div class="container">
+            <span class="section-label" data-aos="fade-up">Expertise</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                My <span class="highlight">Skills</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+                Technologies and tools I work with to bring ideas to life.
+            </p>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                   <div class="skill-items">
+    <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+    <div class="skill-item"><i class="fab fa-react"></i> React &amp Redux</div>
+    <div class="skill-item"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+</div>
+                </div>
+
+                <!-- Backend & Services -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-cloud"></i> Backend &amp; Services</h4>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-fire"></i> Firebase Auth</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> Firestore</div>
+                        <div class="skill-item"><i class="fas fa-plug"></i> REST APIs</div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fas fa-tools"></i> Tools</h4>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> VS Code</div>
+                        <div class="skill-item"><i class="fas fa-globe"></i> Netlify</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROJECTS
+    ============================================================ -->
+    <section id="projects">
+        <div class="container">
+            <span class="section-label" data-aos="fade-up">Portfolio</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                Featured <span class="highlight">Projects</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+                A selection of my recent work that showcases my skills and
+                problem-solving approach.
+            </p>
+
+            <div class="projects-grid">
+              
+                <!-- Project 1 -->
+               <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+    <div class="project-image">
+        <video src="chat-app.mp4" autoplay muted loop playsinline></video>
+        <i class="fas fa-comments" style="display:none;"></i>
+    </div>
+                    <div class="project-body">
+                        <h3>Real-Time Chat Application</h3>
+                        <p>
+                            A full-featured chat app with instant messaging,
+                            user authentication, and room-based conversations.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                            <span>Auth</span>
+                        </div>
+                        <div class="project-challenge">
+                            <i class="fas fa-lightbulb" style="color:var(--accent);margin-right:8px;"></i>
+                            Solved real-time sync and message ordering with Firestore listeners.
+                        </div>
+                        <div class="project-links">
+                            <a href="https://chatt9app.netlify.app/" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Kingsjosh999/Chat-application-and-account-authentication.-.git" class="btn btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="grouping.jpg" alt="Departmental Grouping System" />
+                        <i class="fas fa-users" style="display:none;"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Departmental Grouping System</h3>
+                        <p>
+                            A platform for organizing students into various groups
+                            with automated grouping, storing, and reporting.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Firestore</span>
+                        </div>
+                        <div class="project-challenge">
+                            <i class="fas fa-lightbulb" style="color:var(--accent);margin-right:8px;"></i>
+                            Optimized grouping algorithm to balance department size for efficient assessment.
+                        </div>
+                        <div class="project-links">
+                            <a href="https://groupcs.netlify.app/" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Kingsjosh999/Grouping-System.git" class="btn btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- Project 3 -->
+               <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+    <div class="project-image">
+        <img src="Portfolio.jpg" alt="Portfolio Website" />
+        <i class="fas fa-comments" style="display:none;"></i>
+    </div>
+                    <div class="project-body">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            Built a peronal Portfolio to showcase my skills and projects, and to track my growth in tech.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-challenge">
+                            <i class="fas fa-lightbulb" style="color:var(--accent);margin-right:8px;"></i>
+                            Being able to put myself out there and to track my progress overtime
+                        </div>
+                        <div class="project-links">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CERTIFICATES
+    ============================================================ -->
+    <section id="certificates">
+        <div class="container">
+            <span class="section-label" data-aos="fade-up">Achievements</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                Certificates &amp; <span class="highlight">Awards</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+                Recognitions that reflect my dedication and expertise.
+            </p>
+
+            <div class="cert-grid" id="certGrid">
+                <!-- Certificate 1 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100" data-cert-index="0">
+                    <div class="cert-thumb">
+                        <img src="Certificate 1.jpg" alt="Certificate thumbnail" />
+                        <i class="fas fa-certificate" style="display:none;"></i>
+                    </div>
+                    <h4>Front-End Development Libraries</h4>
+                    <div class="cert-org">freeCodeCamp</div>
+                    <div class="cert-date">Issued: July 2026</div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150" data-cert-index="1">
+                    <div class="cert-thumb">
+                        <img src="certificate 2.jpg" alt="Certificate thumbnail" />
+                        <i class="fas fa-certificate" style="display:none;"></i>
+                    </div>
+                    <h4>JavaScript Algorithms & Data Structures</h4>
+                    <div class="cert-org">freeCodeCamp</div>
+                    <div class="cert-date">Issued: Sep 2025</div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200" data-cert-index="2">
+                    <div class="cert-thumb">
+                        <img src="Certificate 3.jpg" alt="Certificate thumbnail" />
+                        <i class="fas fa-certificate" style="display:none;"></i>
+                    </div>
+                    <h4>Soft Skills Certification</h4>
+                    <div class="cert-org">Alison</div>
+                    <div class="cert-date">Issued: Oct 2024</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="modal-overlay" id="certModal">
+        <div class="modal-content">
+            <div class="modal-thumb">
+                <img src="" alt="Certificate" id="modalCertImg" />
+                <i class="fas fa-certificate" style="display:none;"></i>
+            </div>
+            <h3 id="modalCertTitle">Certificate Title</h3>
+            <div class="modal-org" id="modalCertOrg">Issuing Organization</div>
+            <div class="modal-date" id="modalCertDate">Issued: Date</div>
+            <button class="modal-close" id="modalCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    WHAT I OFFER
+    ============================================================ -->
+    <section id="offer">
+        <div class="container">
+            <span class="section-label" data-aos="fade-up">Services</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                What I <span class="highlight">Offer</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+                Solutions I provide to help you build and scale your digital
+                presence.
+            </p>
+
+            <div class="offer-grid">
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h4>Responsive Websites</h4>
+                    <p>Pixel-perfect, device-friendly interfaces.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon"><i class="fas fa-layer-group"></i></div>
+                    <h4>Web Applications</h4>
+                    <p>Interactive, scalable front-end apps.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fas fa-landmark"></i></div>
+                    <h4>Landing Pages</h4>
+                    <p>High-converting, brand-focused pages.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="icon"><i class="fas fa-fire"></i></div>
+                    <h4>Firebase Integration</h4>
+                    <p>Auth, Firestore, and real-time data.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="fas fa-plug"></i></div>
+                    <h4>API Integration</h4>
+                    <p>Connect your app with third-party APIs.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    <h4>Maintenance &amp; Bug Fixing</h4>
+                    <p>Keep your site running smoothly.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon"><i class="fas fa-rocket"></i></div>
+                    <h4>Performance Optimization</h4>
+                    <p>Faster load times, better UX.</p>
+                </div>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="icon"><i class="fas fa-code-branch"></i></div>
+                    <h4>Code Reviews &amp; Mentoring</h4>
+                    <p>Level up your team's front-end skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- ============================================================
+    EXPERIENCE
+    ============================================================ -->
+    <section id="experience">
+        <div class="container">
+            <span class="section-label" data-aos="fade-up">Experience</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                My <span class="highlight">Journey</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+                A timeline of my professional growth and key milestones.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-date">Nov 2024 – Sep 2025</div>
+                    <h4>StarLab Academy</h4>
+                    <div class="timeline-role">Front-End Development Intern</div>
+                    <ul>
+                        <li>Developed and maintained responsive web interfaces using React.js, HTML5, CSS3, and JavaScript, ensuring optimal viewing experiences across desktops, tablets, and mobile devices.</li>
+                        <li>Collaborated with designers to implement pixel-perfect UI components.</li>
+                        <li>Built and co-managed component-based frontend structures, improving code reusability and consistency across multiple project.</li>
+                        <li>Worked within an Agile team environment, participating in daily stand-ups, code reviews, and sprint planning to deliver features on schedule.</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Add more timeline items here as needed -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-date">June 2025</div>
+                    <h4>Career Launch Outreach</h4>
+                    <div class="timeline-role">Tech Mentor</div>
+                    <ul>
+                        <li>Taught foundational Tech skills to beginners, strengthening my ability to communicate technical ideas clearly.</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span>Design Principles</span>
+                        <span>Tech Skills</span>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT
+    ============================================================ -->
+ <section id="contact">
+    <div class="container">
+        <span class="section-label" data-aos="fade-up">Get in Touch</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Let's <span class="highlight">Connect</span>
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+            Have a question or want to work together? Reach out anytime.
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                <h3>Contact Information</h3>
+                <p>
+                    I'm always open to new opportunities, collaborations,
+                    or just a friendly chat about tech and development.
+                </p>
+
+                <!-- Email (opens mail app) -->
+                <a href="mailto:kingsjosh999@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kingsjosh999@gmail.com</span>
+                </a>
+
+                <!-- LinkedIn (opens in new tab) -->
+                <a href="https://www.linkedin.com/in/joshua-ohaeri-kingsley-11784037a" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="contact-item">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>Joshua Ohaeri Kingsley</span>
+                </a>
+
+                <!-- Phone (opens dialer) -->
+                <a href="tel:+2348061965408" class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+234 806 196 5408</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ==============================================
+    FOOTER
+    ================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">Joshua<span>.</span></div>
+            <p>Building digital experiences with passion and precision.</p>
+           
+            <div class="copyright">
+                &copy; 2026 Joshua Kingsley. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
